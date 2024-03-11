@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btnPickCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Car"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgCar3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/car3new" />
+
+        <!--<ImageView
+            android:id="@+id/imgCar4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/car4new" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safety Features"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mileage"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brake System"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspension System"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/okay_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Okay"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cancel_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Cancel"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
